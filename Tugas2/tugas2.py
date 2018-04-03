@@ -4,8 +4,8 @@ from OpenGL.GLU import *
 from math import *
 
 window = 0                                             # glut window number
-width, height = 1280, 720                               # window size
-PI = 3.141592653589793238462643383279502884197169399
+width, height = 1000, 500                               # window size
+PI = 3.141592653589793238
 rot = 0
 interval = 100
 
@@ -80,7 +80,7 @@ glutInit()                                             # initialize glut
 glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_ALPHA | GLUT_DEPTH)
 glutInitWindowSize(width, height)                      # set window size
 glutInitWindowPosition(0, 0)                           # set window position
-window = glutCreateWindow("noobtuts.com")              # create window with title
+window = glutCreateWindow("Tugas AER")              # create window with title
 glutDisplayFunc(draw)                                  # set draw function callback
 glutIdleFunc(draw)                                     # draw all the time
 glutTimerFunc(interval, rotate, 0)
